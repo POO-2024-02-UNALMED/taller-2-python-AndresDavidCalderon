@@ -9,7 +9,7 @@ class Asiento:
 
     def cambiarColor(self,nuevoColor):
         match nuevoColor:
-            case "rojo","verde","amarillo","negro","blanco":
+            case "rojo"|"verde"|"amarillo"|"negro"|"blanco":
                 self.color=nuevoColor
 
 class Motor:
@@ -24,7 +24,7 @@ class Motor:
 
     def asignarTipo(self, nuevoTipo):
         match nuevoTipo:
-            case "gasolina","electrico":
+            case "gasolina"|"electrico":
                 self.tipo = nuevoTipo
     
 class Auto:
